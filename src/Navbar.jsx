@@ -5,7 +5,6 @@ function Navbar() {
 
 
     return(
-        <header>
             <nav className="Navbar">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -13,7 +12,6 @@ function Navbar() {
                     <li><a href="#">About us</a></li>
                 </ul>
             </nav>
-        </header>
     );
 }
 
