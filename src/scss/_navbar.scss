@@ -2,8 +2,9 @@
     width: 100%; //ALWAYS FUCKING 100%%%%%!!!!
     background-color: black;
     color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
+    z-index: 3;
 
     ul{
         list-style: none;
@@ -25,6 +26,7 @@
               0 0 102px #0fa,
               0 0 151px #0fa;
             }
+
             a{
               text-decoration: none;
               color: white;

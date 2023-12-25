@@ -9,13 +9,13 @@ function App() {
     <>
       <header>
       <Navbar></Navbar>
-      <Banner url="src/Images/background.webp"></Banner>
+      <Banner url="src/Images/background2.jpg"></Banner>
       </header>
-    
-      <body>
+        
+      <main>
       <ShoppingInterface></ShoppingInterface>
       
-      </body>
+      </main>
     </>
   )
 }

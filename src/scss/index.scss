@@ -1,90 +1,60 @@
-@use "flex-grid";
-@use "flex-options";
-
+@use "navbar";
+@use "banner";
+@use "shop";
 //default makeup
-html{
+
+#root{
+  min-width: fit-content;
+  min-height: fit-content;
+}
+
+html,body{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+  font-size: 24px;
+  *{
+    box-sizing: border-box;
+  }
 }
-body{
-  margin: 0;
-}
-#root {
-  margin-top: 10vh;
-}
-
-
 
 //shopping slider styling
 .shop{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-}
-
-.shoppingItem {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-height: 5%;
-  max-width: 10%;
-  background-color: gray;
-  margin: 5px;
-
-  img {
-    max-width: 50%;
-    max-height: 50%;
+  h2{
+    text-align: center;
+    font-size: 2rem;
   }
-  p, h2{
-    margin: 0;
-  }
-
-  #outOfStock {
-    background-color: #d8d8d8;
-    cursor: not-allowed;
-  }
-
-}
-
-
-
-//banner styling
-#banner{
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  justify-content: center;
-  align-items: flex-end;
-
-  img{
-    position:  absolute;
+  .shoppingContainer{
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    max-height: 100%;
-    z-index: 0;
-  }
-  .text{
-    width: fit-content;
-    height: auto;
-    background-color: black;
-    position: relative;
-    z-index: 1;
-    color: white;
-    height: 50%;
-    width: 25%;
+    justify-content: center;
+    background-color: rgba($color: black, $alpha: 0.7);
     
-    h1,p{
-      margin: 0;
-      text-align: center;
+    .shoppingItem {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 5%;
+      width: 10%;
+      background-color: gray;
+      margin: 1rem;
+    
+      img {
+        max-width: 50%;
+        max-height: 50%;
+      }
+    
+      p, h2{
+        margin: 0;
+      }
+    
+      #outOfStock {
+        background-color: #d8d8d8;
+        cursor: not-allowed;
+      }
     }
   }
 }
-
-
-
-
-
-

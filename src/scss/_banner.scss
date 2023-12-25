@@ -1,0 +1,32 @@
+#banner{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: fit-content;
+
+    img{
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+
+    .text{
+        margin-top: 25%;
+        position: relative;
+        z-index: 1;
+        width: 25%;
+        height: fit-content;
+        background-color: rgba($color: black, $alpha: 0.8);
+        * {
+            text-align: center;
+            color: white;
+        }
+    }
+}
