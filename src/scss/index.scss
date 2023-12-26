@@ -1,11 +1,12 @@
 @use "navbar";
 @use "banner";
-@use "shop";
+@use "discount";
+@use "shopping";
 //default makeup
 
 #root{
-  min-width: fit-content;
-  min-height: fit-content;
+  // min-width: fit-content;
+  // min-height: fit-content;
 }
 
 html,body{
@@ -19,42 +20,6 @@ html,body{
   }
 }
 
-//shopping slider styling
-.shop{
-  h2{
-    text-align: center;
-    font-size: 2rem;
-  }
-  .shoppingContainer{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    background-color: rgba($color: black, $alpha: 0.7);
-    
-    .shoppingItem {
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 5%;
-      width: 10%;
-      background-color: gray;
-      margin: 1rem;
-    
-      img {
-        max-width: 50%;
-        max-height: 50%;
-      }
-    
-      p, h2{
-        margin: 0;
-      }
-    
-      #outOfStock {
-        background-color: #d8d8d8;
-        cursor: not-allowed;
-      }
-    }
-  }
+section{
+  padding: 3rem 0;
 }

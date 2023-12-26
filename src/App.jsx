@@ -1,6 +1,7 @@
 import Banner from './Banner.jsx';
-import ShoppingInterface from './ShoppingInterface.jsx';
 import Navbar from './Navbar.jsx';
+import DiscountContainer from './discountContainer.jsx';
+import ProductContainer from './ProductContainer.jsx';
 import './css/index.css';
 
 
@@ -13,8 +14,8 @@ function App() {
       </header>
         
       <main>
-      <ShoppingInterface></ShoppingInterface>
-      
+      <DiscountContainer></DiscountContainer>
+      <ProductContainer></ProductContainer>
       </main>
     </>
   )

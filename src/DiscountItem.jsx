@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ShoppingItem(Props) {
+function discountItem(Props) {
     const [Amount, setCount] = useState(Props.Amount)
     let Stocky = ''
 
@@ -18,13 +18,13 @@ function ShoppingItem(Props) {
     }
 
     return(
-        <div className="shoppingItem">
-            <img src="http://via.placeholder.com/150/150" alt=""/>
-            <h2>{Props.name}</h2>
-            <p>{Props.price}</p>
+        <div className="discountItem">
+            <img src="http://via.placeholder.com/350/350" alt=""/>
+            <p>{Props.name}</p>
+            <p className="price">{Props.price}</p>
                {Stocky}
         </div>
     )
 }
 
-export default ShoppingItem;
+export default discountItem;
