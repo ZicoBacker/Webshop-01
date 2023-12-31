@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 0;
 }
 .Navbar ul li {
   font-size: 1em;
@@ -94,6 +95,8 @@
   right: 50px;
 }
 .Discount .discountContainer .discountItem {
+  text-decoration: none;
+  color: black;
   position: absolute;
   width: 200px;
   height: 320px;

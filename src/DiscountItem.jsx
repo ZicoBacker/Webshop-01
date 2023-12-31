@@ -21,7 +21,7 @@ function discountItem(Props) {
   }
 
   return (
-    <div className="discountItem">
+    <div className="discountItem" href="">
       <img src="https://placekitten.com/350/350" alt="" />
       <p>{Props.name}</p>
       <p className="price">{Props.price}</p>
