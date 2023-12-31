@@ -32,12 +32,12 @@
 [class*=" col-"] {
   flex-direction: column;
   max-width: 100%;
-  padding: 0.5rem;
+  // padding: 0.5rem;
 
   .inner {
     flex-direction: column;
     height: 100%;
-    padding: 0.5rem;
+    // padding: 0.5rem;
     border-radius: 0.5rem;
   }
 }

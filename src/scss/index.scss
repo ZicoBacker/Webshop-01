@@ -2,24 +2,28 @@
 @use "banner";
 @use "discount";
 @use "shopping";
+@use "flex-grid";
 //default makeup
 
-#root{
-  // min-width: fit-content;
-  // min-height: fit-content;
-}
-
-html,body{
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   min-height: 100%;
   font-size: 24px;
-  *{
+  * {
     box-sizing: border-box;
   }
 }
 
-section{
+section {
   padding: 3rem 0;
+}
+
+*{
+  img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
 }

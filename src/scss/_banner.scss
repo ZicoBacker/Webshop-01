@@ -18,12 +18,12 @@
     }
 
     .text{
-        margin-top: 25%;
+        margin-top: 25vh;
         position: relative;
         z-index: 1;
-        width: 25%;
         height: fit-content;
         background-color: rgba($color: black, $alpha: 0.8);
+        width: clamp(20rem, 20vw, 100%);
         * {
             text-align: center;
             color: white;
